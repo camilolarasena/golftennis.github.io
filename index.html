@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ace & Drive | Equipamiento Profesional de Tenis y Golf</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Tienda especializada en equipamiento profesional de tenis y golf. Las mejores marcas al mejor precio." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="header" id="top">
+  <div class="header-container">
+    <a class="logo" href="#inicio" aria-label="Ir al inicio">
+      <img src="ace-drive.png" alt="Ace & Drive - Tenis y Golf">
+    </a>
+
+    <button class="mobile-menu-toggle" aria-label="Abrir menú" id="mobileMenuToggle">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="#inicio">Inicio</a>
+      <a href="#tenis">Tenis</a>
+      <a href="#golf">Golf</a>
+      <a href="#ofertas">Ofertas</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-btn" aria-label="Buscar" id="searchBtn">
+        <i class="fas fa-search"></i>
+      </button>
+
+      <button class="icon-btn cart-btn" aria-label="Carrito" id="openCartBtn">
+        <i class="fas fa-shopping-cart"></i>
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile dropdown -->
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#inicio">Inicio</a>
+    <a href="#tenis">Tenis</a>
+    <a href="#golf">Golf</a>
+    <a href="#ofertas">Ofertas</a>
+    <a href="#contacto">Contacto</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="inicio">
+  <div class="hero-content">
+    <span class="hero-badge">
+      <img src="raqueta_tenis.png" alt="" class="badge-icon">
+      Equipamiento Premium
+    </span>
+
+    <h1>Eleva tu Juego al Siguiente Nivel</h1>
+    <p>Descubre equipamiento profesional de tenis y golf de las marcas más prestigiosas del mundo</p>
+
+    <div class="hero-buttons">
+      <a href="#tenis" class="btn btn-primary">
+        <i class="fas fa-shopping-bag"></i> Ver Productos
+      </a>
+      <a href="#ofertas" class="btn btn-secondary">
+        <i class="fas fa-tag"></i> Ofertas Especiales
+      </a>
+    </div>
+  </div>
+
+  <div class="hero-stats">
+    <div class="stat-item">
+      <i class="fas fa-box"></i>
+      <span class="stat-number">500+</span>
+      <span class="stat-label">Productos</span>
+    </div>
+    <div class="stat-item">
+      <i class="fas fa-star"></i>
+      <span class="stat-number">4.9/5</span>
+      <span class="stat-label">Valoración</span>
+    </div>
+    <div class="stat-item">
+      <i class="fas fa-shipping-fast"></i>
+      <span class="stat-number">24h</span>
+      <span class="stat-label">Envío Rápido</span>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="features-section">
+  <div class="container">
+    <div class="features-grid">
+      <div class="feature-card">
+        <i class="fas fa-shield-alt"></i>
+        <h3>Garantía Total</h3>
+        <p>2 años de garantía en todos nuestros productos</p>
+      </div>
+      <div class="feature-card">
+        <i class="fas fa-truck"></i>
+        <h3>Envío Gratis</h3>
+        <p>En compras superiores a $100</p>
+      </div>
+      <div class="feature-card">
+        <i class="fas fa-undo"></i>
+        <h3>Devolución Fácil</h3>
+        <p>30 días para devolver tu compra</p>
+      </div>
+      <div class="feature-card">
+        <i class="fas fa-headset"></i>
+        <h3>Soporte 24/7</h3>
+        <p>Estamos aquí para ayudarte</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TENIS -->
+<section class="section products-section" id="tenis">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-header-content">
+        <span class="section-badge">
+          <img src="raqueta_tenis.png" alt="" class="badge-icon">
+          TENIS
+        </span>
+        <h2 class="section-title">Equipamiento de Tenis</h2>
+        <p class="section-subtitle">Descubre nuestra colección profesional para dominar la cancha</p>
+      </div>
+      <a href="#tenis" class="btn btn-outline">Ver Todo</a>
+    </div>
+
+    <div class="products-grid">
+      <!-- Raqueta -->
+      <div class="product-card"
+           data-name="Raqueta Pro Tour"
+           data-price="249.99"
+           data-image="raqueta_tenis.png"
+           data-category="Raquetas"
+           data-description="Raqueta profesional de carbono, peso 300g, balance perfecto">
+        <div class="product-badge">Nuevo</div>
+        <div class="product-image">
+          <div class="product-icon">
+            <img src="raqueta_tenis.png" alt="Raqueta de tenis" class="product-icon-img">
+          </div>
+          <div class="product-overlay">
+            <button class="quick-view-btn" type="button">Vista Rápida</button>
+          </div>
+        </div>
+        <div class="product-info">
+          <div class="product-category">Raquetas</div>
+          <h3 class="product-name">Raqueta Pro Tour</h3>
+          <p class="product-description">Raqueta profesional de carbono, peso 300g, balance perfecto</p>
+          <div class="product-rating">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+            <span>(128)</span>
+          </div>
+          <div class="product-footer">
+            <span class="product-price">$249.99</span>
+            <button class="btn-add-cart" type="button">
+              <i class="fas fa-cart-plus"></i> Agregar
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pelotas tenis -->
+      <div class="product-card"
+           data-name="Pelotas Premium (Pack x3)"
+           data-price="9.99"
+           data-image="pelotas_tenis.png"
+           data-category="Pelotas"
+           data-description="Pack de 3 unidades, ITF aprobadas, alta durabilidad">
+        <div class="product-badge popular">Popular</div>
+        <div class="product-image">
+          <div class="product-icon">
+            <img src="pelotas_tenis.png" alt="Pelotas de tenis" class="product-icon-img">
+          </div>
+          <div class="product-overlay">
+            <button class="quick-view-btn" type="button">Vista Rápida</button>
+          </div>
+        </div>
+        <div class="product-info">
+          <div class="product-category">Pelotas</div>
+          <h3 class="product-name">Pelotas Premium</h3>
+          <p class="product-description">Pack de 3 unidades, ITF aprobadas, alta durabilidad</p>
+          <div class="product-rating">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <span>(89)</span>
+          </div>
+          <div class="product-footer">
+            <span class="product-price">$9.99</span>
+            <button class="btn-add-cart" type="button">
+              <i class="fas fa-cart-plus"></i> Agregar
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Camiseta tenis -->
+      <div class="product-card"
+           data-name="Camiseta Técnica Pro"
+           data-price="34.99"
+           data-image="camiseta_tenis.png"
+           data-category="Ropa"
+           data-description="Tejido transpirable, secado rápido, tecnología anti-UV">
+        <div class="product-image">
+          <div class="product-icon">
+            <img src="camiseta_tenis.png" alt="Camiseta de tenis" class="product-icon-img">
+          </div>
+          <div class="product-overlay">
+            <button class="quick-view-btn" type="button">Vista Rápida</button>
+          </div>
+        </div>
+        <div class="product-info">
+          <div class="product-category">Ropa</div>
+          <h3 class="product-name">Camiseta Técnica Pro</h3>
+          <p class="product-description">Tejido transpirable, secado rápido, tecnología anti-UV</p>
+          <div class="product-rating">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+            <span>(45)</span>
+          </div>
+          <div class="product-footer">
+            <span class="product-price">$34.99</span>
+            <button class="btn-add-cart" type="button">
+              <i class="fas fa-cart-plus"></i> Agregar
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Zapatillas tenis -->
+      <div class="product-card"
+           data-name="Zapatillas Court Speed"
+           data-price="119.99"
+           data-image="assets/img/zapatillas_tenis.png"
+           data-category="Calzado"
+           data-description="Máximo agarre y estabilidad, diseño ergonómico">
+        <div class="product-image">
+          <div class="product-icon">
+            <img src="zapatillas_tenis.png" alt="Zapatillas de tenis" class="product-icon-img">
+          </div>
+          <div class="product-overlay">
+            <button class="quick-view-btn" type="button">Vista Rápida</button>
+          </div>
+        </div>
+        <div class="product-info">
+          <div class="product-category">Calzado</div>
+          <h3 class="product-name">Zapatillas Court Speed</h3>
+          <p class="product-description">Máximo agarre y estabilidad, diseño ergonómico</p>
+          <div class="product-rating">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+            <span>(67)</span>
+          </div>
+          <div class="product-footer">
+            <span class="product-price">$119.99</span>
+            <button class="btn-add-cart" type="button">
+              <i class="fas fa-cart-plus"></i> Agregar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GOLF -->
+<section class="section products-section dark" id="golf">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-header-content">
+        <span class="section-badge">
+          <img src="hierros_golf.png" alt="" class="badge-icon">
+          GOLF
+        </span>
+        <h2 class="section-title">Equipamiento de Golf</h2>
+        <p class="section-subtitle">Todo lo que necesitas para mejorar tu swing y bajar tu handicap</p>
+      </div>
+      <a href="#golf" class="btn btn-outline">Ver Todo</a>
+    </div>
+
+    <div class="products-grid">
+      <!-- Palos/Herramienta (usamos hierros_golf.png) -->
+      <div class="product-card"
+           data-name="Set Hierros Serie Pro"
+           data-price="399.99"
+           data-image="assets/img/hierros_golf.png"
+           data-category="Hierros"
+           data-description="Set premium, gran control, consistencia y distancia">
+        <div class="product-badge">Best Seller</div>
+        <div class="product-image">
+          <div class="product-icon">
+            <img src="hierros_golf.png" alt="Hierros de golf" class="product-icon-img">
+          </div>
+          <div class="product-overlay">
+            <button class="quick-view-btn" type="button">Vista Rápida</button>
+          </div>
+        </div>
+        <div class="product-info">
+          <div class="product-category">Hierros</div>
+          <h3 class="product-name">Set Hierros Serie Pro</h3>
+          <p class="product-description">Set premium, gran control, consistencia y distancia</p>
+          <div class="product-rating">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <span>(156)</span>
+          </div>
+          <div class="product-footer">
+            <span class="product-price">$399.99</span>
+            <button class="btn-add-cart" type="button">
+              <i class="fas fa-cart-plus"></i> Agregar
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pelotas golf -->
+      <div class="product-card"
+           data-name="Pelotas Tour (Pack x12)"
+           data-price="45.99"
+           data-image="assets/img/pelotas_golf.png"
+           data-category="Pelotas"
+           data-description="Pack de 12 unidades, 3 capas, alto spin y control">
+        <div class="product-image">
+          <div class="product-icon">
+            <img src="pelotas_golf.png" alt="Pelotas de golf" class="product-icon-img">
+          </div>
+          <div class="product-overlay">
+            <button class="quick-view-btn" type="button">Vista Rápida</button>
+          </div>
+        </div>
+        <div class="product-info">
+          <div class="product-category">Pelotas</div>
+          <h3 class="product-name">Pelotas Tour</h3>
+          <p class="product-description">Pack de 12 unidades, 3 capas, alto spin y control</p>
+          <div class="product-rating">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+            <span>(203)</span>
+          </div>
+          <div class="product-footer">
+            <span class="product-price">$45.99</span>
+            <button class="btn-add-cart" type="button">
+              <i class="fas fa-cart-plus"></i> Agregar
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bolsa golf -->
+      <div class="product-card"
+           data-name="Bolsa Cart Premium"
+           data-price="129.99"
+           data-image="assets/img/bolsa_golf.png"
+           data-category="Bolsas"
+           data-description="14 divisiones, impermeable, múltiples bolsillos">
+        <div class="product-badge">Nuevo</div>
+        <div class="product-image">
+          <div class="product-icon">
+            <img src="bolsa_golf.png" alt="Bolsa de golf" class="product-icon-img">
+          </div>
+          <div class="product-overlay">
+            <button class="quick-view-btn" type="button">Vista Rápida</button>
+          </div>
+        </div>
+        <div class="product-info">
+          <div class="product-category">Bolsas</div>
+          <h3 class="product-name">Bolsa Cart Premium</h3>
+          <p class="product-description">14 divisiones, impermeable, múltiples bolsillos</p>
+          <div class="product-rating">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+            <span>(78)</span>
+          </div>
+          <div class="product-footer">
+            <span class="product-price">$129.99</span>
+            <button class="btn-add-cart" type="button">
+              <i class="fas fa-cart-plus"></i> Agregar
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Accesorio (reusamos hierros_golf.png si no tienes guante) -->
+      <div class="product-card"
+           data-name="Accesorio Premium"
+           data-price="24.99"
+           data-image="hierros_golf.png"
+           data-category="Accesorios"
+           data-description="Accesorio premium, máximo agarre y sensibilidad">
+        <div class="product-image">
+          <div class="product-icon">
+            <img src="hierros_golf.png" alt="Accesorio de golf" class="product-icon-img">
+          </div>
+          <div class="product-overlay">
+            <button class="quick-view-btn" type="button">Vista Rápida</button>
+          </div>
+        </div>
+        <div class="product-info">
+          <div class="product-category">Accesorios</div>
+          <h3 class="product-name">Accesorio Premium</h3>
+          <p class="product-description">Accesorio premium, máximo agarre y sensibilidad</p>
+          <div class="product-rating">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <span>(92)</span>
+          </div>
+          <div class="product-footer">
+            <span class="product-price">$24.99</span>
+            <button class="btn-add-cart" type="button">
+              <i class="fas fa-cart-plus"></i> Agregar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OFERTAS -->
+<section class="offers-section" id="ofertas">
+  <div class="container">
+    <div class="section-header center">
+      <span class="section-badge section-badge--light">
+        <img src="pelotas_tenis.png" alt="" class="badge-icon">
+        OFERTAS ESPECIALES
+      </span>
+      <h2 class="section-title section-title--light">Aprovecha Nuestras Promociones</h2>
+      <p class="section-subtitle section-subtitle--light">Descuentos increíbles por tiempo limitado</p>
+    </div>
+
+    <div class="offers-grid">
+      <div class="offer-card large">
+        <div class="offer-content">
+          <span class="offer-label">Oferta del Día</span>
+          <h3>Hasta 40% OFF</h3>
+          <p>En productos seleccionados de tenis y golf</p>
+          <a href="#tenis" class="btn btn-primary">Ver Ofertas</a>
+        </div>
+        <div class="offer-badge">-40%</div>
+      </div>
+
+      <div class="offer-card">
+        <div class="offer-content">
+          <span class="offer-label">Envío Gratis</span>
+          <h3>En compras +$100</h3>
+          <p>Recibe tus productos sin costo adicional</p>
+          <a href="#tenis" class="btn btn-outline-light">Comprar Ahora</a>
+        </div>
+      </div>
+
+      <div class="offer-card">
+        <div class="offer-content">
+          <span class="offer-label">Black Friday</span>
+          <h3>Ofertas Exclusivas</h3>
+          <p>Suscríbete y recibe descuentos especiales</p>
+          <a href="#contacto" class="btn btn-outline-light">Suscribirse</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials-section">
+  <div class="container">
+    <div class="section-header center">
+      <span class="section-badge">
+        <img src="camiseta_tenis.png" alt="" class="badge-icon">
+        TESTIMONIOS
+      </span>
+      <h2 class="section-title">Lo Que Dicen Nuestros Clientes</h2>
+    </div>
+
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <div class="testimonial-rating">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+        <p class="testimonial-text">"Excelente calidad en todos los productos. La raqueta Pro Tour superó mis expectativas. Envío rápido y atención al cliente de primera."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">JM</div>
+          <div>
+            <div class="author-name">Juan Martínez</div>
+            <div class="author-role">Jugador Amateur</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="testimonial-rating">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+        <p class="testimonial-text">"Increíble control con las pelotas Tour. He mejorado mi consistencia notablemente. Totalmente recomendado."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">AL</div>
+          <div>
+            <div class="author-name">Ana López</div>
+            <div class="author-role">Golfista Profesional</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="testimonial-rating">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+        <p class="testimonial-text">"Llevo años comprando aquí. Siempre encuentro lo que busco y los precios son muy competitivos. El servicio post-venta es excelente."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">CR</div>
+          <div>
+            <div class="author-name">Carlos Ruiz</div>
+            <div class="author-role">Cliente Frecuente</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer" id="contacto">
+  <div class="footer-content">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-section about">
+          <div class="footer-logo">
+            <img src="ace-drive.png" alt="Ace & Drive">
+          </div>
+          <p class="footer-description">
+            Tu tienda especializada en equipamiento profesional de tenis y golf.
+            Productos de las mejores marcas con garantía y atención personalizada.
+          </p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h3 class="footer-title">Comprar</h3>
+          <ul class="footer-links">
+            <li><a href="#tenis">Equipamiento Tenis</a></li>
+            <li><a href="#golf">Equipamiento Golf</a></li>
+            <li><a href="#ofertas">Ofertas Especiales</a></li>
+            <li><a href="#tenis">Nuevos Productos</a></li>
+            <li><a href="#top">Marcas</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3 class="footer-title">Ayuda</h3>
+          <ul class="footer-links">
+            <li><a href="#top">Preguntas Frecuentes</a></li>
+            <li><a href="#top">Envíos y Devoluciones</a></li>
+            <li><a href="#top">Métodos de Pago</a></li>
+            <li><a href="#top">Garantía</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section contact">
+          <h3 class="footer-title">Contacto</h3>
+          <ul class="contact-info">
+            <li><i class="fas fa-map-marker-alt"></i><span>Av. Principal 123, Ciudad</span></li>
+            <li><i class="fas fa-phone"></i><span>+1 234 567 890</span></li>
+            <li><i class="fas fa-envelope"></i><span><a href="mailto:contacto@acedrive.com">contacto@acedrive.com</a></span></li>
+            <li><i class="fas fa-clock"></i><span>Lun-Sáb: 9:00 - 20:00</span></li>
+          </ul>
+        </div>
+
+        <div class="footer-section newsletter">
+          <h3 class="footer-title">Newsletter</h3>
+          <p>Suscríbete y recibe ofertas exclusivas</p>
+          <form class="newsletter-form" id="newsletterForm">
+            <input type="email" placeholder="Tu correo electrónico" required>
+            <button type="submit" aria-label="Suscribirse">
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </form>
+          <div class="payment-methods">
+            <i class="fab fa-cc-visa"></i>
+            <i class="fab fa-cc-mastercard"></i>
+            <i class="fab fa-cc-amex"></i>
+            <i class="fab fa-cc-paypal"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="footer-bottom-content">
+        <p>© 2024 Ace & Drive. Todos los derechos reservados.</p>
+        <div class="footer-links-bottom">
+          <a href="#top">Política de Privacidad</a>
+          <a href="#top">Términos y Condiciones</a>
+          <a href="#top">Cookies</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- CART MODAL -->
+<div class="cart-modal" id="cartModal" aria-hidden="true">
+  <div class="cart-modal-content">
+    <div class="cart-header">
+      <h3><i class="fas fa-shopping-cart"></i> Carrito de Compras</h3>
+      <button class="close-cart" id="closeCartBtn" aria-label="Cerrar carrito">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+
+    <div class="cart-items" id="cartItems">
+      <div class="empty-cart" id="emptyCart">
+        <i class="fas fa-shopping-cart"></i>
+        <p>Tu carrito está vacío</p>
+      </div>
+    </div>
+
+    <div class="cart-footer">
+      <div class="cart-total">
+        <span>Total:</span>
+        <span class="total-amount" id="totalAmount">$0.00</span>
+      </div>
+      <button class="btn btn-primary btn-block" id="checkoutBtn" type="button">
+        <i class="fas fa-credit-card"></i> Pagar
+      </button>
+      <button class="btn btn-outline btn-block" id="clearCartBtn" type="button" style="margin-top:12px;">
+        <i class="fas fa-trash"></i> Vaciar Carrito
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- QUICK VIEW MODAL -->
+<div class="qv-modal" id="qvModal" aria-hidden="true">
+  <div class="qv-content" role="dialog" aria-modal="true" aria-label="Vista rápida">
+    <button class="qv-close" id="qvCloseBtn" aria-label="Cerrar vista rápida">
+      <i class="fas fa-times"></i>
+    </button>
+
+    <div class="qv-grid">
+      <div class="qv-image-wrap">
+        <img id="qvImage" src="" alt="" />
+      </div>
+      <div class="qv-info">
+        <div class="qv-category" id="qvCategory"></div>
+        <h3 class="qv-title" id="qvTitle"></h3>
+        <p class="qv-desc" id="qvDesc"></p>
+        <div class="qv-price" id="qvPrice"></div>
+
+        <button class="btn btn-primary" id="qvAddBtn" type="button">
+          <i class="fas fa-cart-plus"></i> Agregar al Carrito
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="scripts.js"></script>
+</body>
+</html>
